@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="logo">
+          <img class="header-logo" src="../icons/demo-logo.png" alt="" />
+        </div>
+        <i class="fas fa-bars"></i>
+        <nav class="navigation d-flex justify-content-center">
+          <ul>
+            <li><a class="ctn-anime" href="#">Home</a></li>
+            <li>
+              <a class="ctn-anime" href="#"
+                >Listing <i class="fas fa-chevron-down"></i
+              ></a>
+            </li>
+            <li><a class="ctn-anime" href="#">Agency</a></li>
+            <li><a class="ctn-anime" href="#">Agent</a></li>
+            <li><a class="ctn-anime" href="#">Blog</a></li>
+            <li><a class="ctn-anime" href="#">Page</a></li>
+          </ul>
+        </nav>
+
+        <!-- </div> -->
+        <nav class="registration">
+          <ul>
+            <li>
+              <i class="far fa-user-circle mr-2"></i><a href="">SIGN IN</a>
+            </li>
+            <li>
+              <a class="btn-listing" href=""
+                >Add listing <i class="fas fa-home ml-3"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="mobile-searchbar">
+      <div class="container">
+        <div class="row">
+          <i class="fas fa-cog"></i>
+          <input
+            id="search-bar"
+            class="form-control"
+            value=""
+            name="keyword"
+            type="text"
+            placeholder="Enter Keyword..."
+          /><i class="fas fa-search"></i>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section #homeBigSlide>
+        <div class="slide-wrapper">
+          <div class="owl-carousel owl-theme first-slide">
+            <div class="item-1"></div>
+            <div class="item-2"></div>
+            <div class="item-3"></div>
+          </div>
+        </div>
+      </section>
+      <section id="inner-column">
+        <form>
+          <div class="column-inn-black align-items-center">
+            <div class="element-status-form">
+              <div class="drop-area d-flex align-items-center">
+                <h5>KEYWORD</h5>
+                <input
+                  type="search"
+                  name=""
+                  id="black-search"
+                  placeholder="Enter Keyword"
+                />
+                <i class="fas fa-search"></i>
+              </div>
+              <!-- black inbox line -->
+              <ul class="drop-item-1">
+                <li>
+                  <span for="type">Types</span>
+                </li>
+                <select name="types" id="type">
+                  <option value="arr">Apartment</option>
+                  <option value="arr">Bar</option>
+                  <option value="arr">Cafe</option>
+                  <option value="arr">Farm</option>
+                  <option value="arr">House</option>
+                  <option value="arr">Luxury Homes</option>
+                  <option value="arr">Office</option>
+                  <option value="arr">Single family</option>
+                  <option value="arr">Store</option>
+                  <option value="arr">Villa</option>
+                </select>
+              </ul>
+              <ul class="drop-item-2">
+                <li>
+                  <span for="status">Status</span>
+                </li>
+                <li>
+                  <select name="status" id="status">
+                    <option value="">For Rent</option>
+                    <option value="">For Sale</option>
+                  </select>
+                </li>
+              </ul>
+              <div class="advanced">
+                <a href="#" class="btn-advanced"
+                  >Advanced <i class="fas fa-plus-circle"></i
+                ></a>
+              </div>
+              <button class="submit" value="search" type="submit">
+                Search
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section id="welcome-home">
+        <div class="container">
+          <div class="flex-row">
+            <div class="col-md-12">
+              <div class="welcome-text">
+                <h2>Welcome to HomeID</h2>
+                <p>
+                  Whether you’re buying, selling or renting, we can help you
+                  move forward.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 col-sm-4">
+                <div class="card item-1">
+                  <img src="../img/welcome-home/image-box-01.png" alt="" />
+                  <h4>Buy a new home</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec <br />
+                    tetur cing elit. Suspe ndisse suscipit
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="card item-1">
+                  <img src="../img/welcome-home/image-box-02.png" alt="" />
+                  <h4>Sell a home</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec <br />
+                    tetur cing elit. Suspe ndisse suscipit
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-4">
+                <div class="card item-1">
+                  <img src="../img/welcome-home/image-box-03.png" alt="" />
+                  <h4>Rent a home</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consec <br />
+                    tetur cing elit. Suspe ndisse suscipit
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="feature">
+          <div class="container-wrapper mt-5">
+            <div class="featured-prop">
+              <div class="header-wrapper">
+                <div class="home-id">
+                  <h1>HomeID Featured Properties</h1>
+                  <p>Find a perfect place for you</p>
+                </div>
+                <div class="view-button">
+                  <a href="#"
+                    >View all properities
+                    <i class="fas fa-long-arrow-alt-right"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="owl-carousel owl-theme second-slider">
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="img-text-box">
+                    <div class="featured"><span>FEATURED</span></div>
+                    <div class="for-rent"><span>FOR RENT</span></div>
+                  </div>
+                  <img
+                    class="card-img-top"
+                    src="/img/feature/demo-1.jpg"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
+                    <a href="#">289 Foxhall Ave, Kingston</a>
+                    <div class="icon-line-box">
+                      <ul class="line d-flex">
+                        <li>
+                          <i><i class="fas fa-bed"></i></i>
+                          <span class="bed">3 Br</span>
+                        </li>
+                        <li>
+                          <i><i class="fas fa-shower"></i></i>
+                          <span class="bath">3 Ba</span>
+                        </li>
+                        <li>
+                          <i><i class="far fa-window-maximize"></i></i>
+                          <span class="size">900 SqFt</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-footer">
+                    <span class="card-text">
+                      <small class="price">$550</small>
+                      <small class="month">/ month</small>
+                      <div class="card-icons-right float-right">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-plus"></i>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="black-side">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="header">
+                <h2>Explore New Lifestyles</h2>
+                <p>Find your next home, in any style you prefer.</p>
+              </div>
+            </div>
+            <!-- <div class="icon-anime d-flex">
+              <div class="back">
+                <div class="item">
+                  <img src="/img/black-side/image-box-60.png" alt="" />
+                  <img
+                    class="white"
+                    src="/img/black-side/image-box-53.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

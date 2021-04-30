@@ -1,0 +1,115 @@
+header {
+  overflow-x: hidden;
+  @include PhoneResp() {
+    overflow-x: hidden;
+    z-index: 1;
+    height: 152px;
+  }
+
+  font-weight: 500px;
+  height: 80px;
+  background-color: #191717;
+
+  .fa-bars {
+    display: none;
+    position: relative;
+    color: white;
+    left: 300px;
+    top: 20px;
+    @include PhoneResp() {
+      display: block;
+      left: 180px;
+      top: 25px;
+      font-size: 30px;
+    }
+  }
+
+  img {
+    @include PhoneResp() {
+      left: 30px;
+      top: 30px;
+    }
+    top: 20px;
+    position: relative;
+    left: 220px;
+    max-height: 30px;
+  }
+  .navigation {
+    @include PhoneResp() {
+      display: none;
+    }
+    .fa-chevron-down {
+      color: white;
+      font-size: 15px;
+      font-weight: 100px;
+    }
+
+    top: 30px;
+    position: relative;
+    left: 480px;
+    font-size: 14px;
+    ul {
+      display: flex;
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:first-child {
+            margin-left: 35px;
+          }
+        }
+
+        .ctn-anime {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            bottom: -10px;
+            background-color: #d1a570;
+          }
+          &::before {
+            transform: scale(0, 1);
+            transform-origin: 100% 0%;
+            transition: transform 0.3s ease;
+          }
+          &:hover::before {
+            transform: scale(1, 1);
+            transform-origin: 0% 100%;
+          }
+        }
+      }
+    }
+  }
+  .registration {
+    @include PhoneResp() {
+      display: none;
+    }
+    top: 30px;
+    display: flex;
+    position: relative;
+    left: 810px;
+
+    ul {
+      display: flex;
+      li {
+        color: white;
+
+        a {
+          text-decoration: none;
+
+          color: white;
+        }
+        .btn-listing {
+          border: 1px solid gray;
+          padding: 15px 30px;
+          border-radius: 5px;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+}

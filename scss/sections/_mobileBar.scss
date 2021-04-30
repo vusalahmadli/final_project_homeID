@@ -1,0 +1,51 @@
+.mobile-searchbar {
+    display: none;
+    @include PhoneResp() {
+      height: 52px;
+      display: flex;
+  
+      .fa-cog {
+        display: flex;
+        z-index: 4;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 15px;
+        bottom: 60px;
+        width: 42px;
+        height: 52px;
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+        background-color: white;
+        border-color: gray;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-right-color: gray;
+      }
+      .fa-search {
+        z-index: 3;
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        bottom: 60px;
+        height: 52px;
+        left: 15px;
+        width: 40px;
+        font-size: 1.5rem;
+        color: rgb(0, 0, 0);
+        border-color: white;
+        background-color: white;
+      }
+      #search-bar {
+        z-index: 2;
+        height: 52px;
+        position: relative;
+        bottom: 60px;
+        left: 16px;
+        width: 262px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 0px;
+      }
+    }
+  }

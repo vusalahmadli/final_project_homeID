@@ -1,0 +1,39 @@
+#black-side {
+  background-color: #222121 !important;
+  height: 538px;
+  .container {
+    .header {
+      margin-top: 100px;
+      color: white;
+      justify-content: center;
+      h2 {
+        @include Flex-Just-center;
+    }
+    p {
+          @include Flex-Just-center;
+        margin-top: 20px;
+        color: $mute-color;
+      }
+    }
+    /* .back {
+      top: 100px;
+      position: relative;
+      .item {
+        z-index: 1;
+        position: relative;
+      }
+      .white {
+        opacity: 0%;
+        z-index: 2;
+        position: relative;
+        left: 0px;
+        bottom: 208px;
+        transition: 0.3s;
+        border: 1px solid gray;
+        &:hover {
+          opacity: 100%;
+        }
+      }
+    } */
+  }
+}
