@@ -24,7 +24,7 @@ header {
     top: 20px;
     @include PhoneResp() {
       display: block;
-      left: 180px;
+      left: 30px;
       top: 25px;
       font-size: 30px;
     }

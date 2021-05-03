@@ -1,6 +1,5 @@
 $(".first-slide").owlCarousel({
   loop: false,
-  nav: true,
   responsive: {
     0: {
       items: 1,
@@ -8,11 +7,32 @@ $(".first-slide").owlCarousel({
     600: {
       items: 1,
       nav: false,
+      dots: true,
     },
     1000: {
       dots: true,
       items: 1,
+      nav: true,
+    },
+    1200: {
+      dots: true,
+      items: 1,
       nav: false,
+    },
+    1400: {
+      dots: false,
+      items: 1,
+      nav: true,
+    },
+    1800: {
+      dots: false,
+      items: 1,
+      nav: true,
+    },
+    1900: {
+      dots: false,
+      items: 1,
+      nav: true,
     },
   },
 });
@@ -34,7 +54,7 @@ $(".second").owlCarousel({
       items: 2,
     },
     1200: {
-      items: 4,
+      items: 2,
     },
     1400: {
       items: 4,

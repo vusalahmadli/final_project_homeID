@@ -16,7 +16,7 @@ main {
         top: -80px;
         z-index: 7;
         width: 80%;
-        height: 100px;
+        // height: 100px;
         border-radius: 5px;
         padding: 20px 30px;
 
@@ -36,7 +36,7 @@ main {
               font-weight: 600;
             }
             input[type="search"] {
-                width: 590px;
+              width: 590px;
               height: 42px;
               border-top: none;
               border-left: none;
@@ -97,13 +97,13 @@ main {
           }
 
           .btn {
-            width: 10%;
+            width: 20%;
             margin-right: 15px;
             color: $link-color;
             font-weight: 600;
             background-color: rgb(54, 54, 54);
             border: none;
-            height: 70px;
+            height: 80px;
 
             .fa-plus-circle {
               font-size: 15px;
@@ -111,7 +111,7 @@ main {
             }
           }
           input[type="submit"] {
-            width: 10%;
+            width: 20%;
             background-color: $secondary-color;
             border: none;
             border-radius: 5px;
@@ -138,7 +138,7 @@ main {
         }
       }
       .card-wrapper {
-        width: 75%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 50px;
@@ -158,7 +158,7 @@ main {
             margin-left: 30px;
           }
           &:hover {
-            box-shadow: 0px 8px 20px 7px #c7c7c7;
+            box-shadow: -6px 10px 42px 7px #c7c7c7;
           }
 
           .home-image {
@@ -281,7 +281,7 @@ main {
                 width: 100%;
                 .fa-couch,
                 .fa-shower,
-                .fa-ruler-vertical {
+                .fa-window-maximize {
                   color: $secondary-color;
                 }
                 P {
@@ -289,6 +289,7 @@ main {
                 }
               }
             }
+
             .card-footer {
               display: flex;
               justify-content: space-between;
@@ -315,6 +316,252 @@ main {
                   }
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #black-side {
+    margin-top: 60px;
+    background-color: $searchbar-color;
+
+    .container {
+      @include Flex-Just-center;
+      .row {
+        margin-top: 90px;
+        z-index: 15;
+        position: absolute;
+
+        .header {
+          color: #e7e7e7;
+          text-align: center;
+          h2 {
+            font-size: 32px;
+            line-height: 1.63;
+          }
+        }
+      }
+    }
+    .container-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      .style-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 250px;
+        transition: 0.3s;
+        .photo-box {
+          border-radius: 5px;
+          width: 25%;
+          margin: auto auto;
+          height: auto;
+          padding: 25px 50px 0px 50px;
+          transition: border 0.2s;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: -1px;
+            top: 26%;
+            height: 50%;
+            border-right: 1px solid rgb(70, 70, 70);
+          }
+
+          &:hover {
+            background-color: rgba(70, 70, 70, 0.3);
+
+            img {
+              background-image: url(/img/black-side/image-box-4-4.png);
+              background-size: 100%;
+              background-position: center center;
+            }
+          }
+
+          .img-box {
+            margin-bottom: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              margin: auto;
+              height: auto;
+            }
+          }
+
+          .content {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            h4 {
+              color: white;
+              font-size: medium;
+            }
+            p {
+              font-size: small;
+              margin-top: 15px;
+              color: $link-border-color;
+            }
+          }
+        }
+        .photo-box-2 {
+          border-radius: 5px;
+          width: 25%;
+          margin: auto auto;
+          height: auto;
+          padding: 25px 50px 0px 50px;
+          transition: border 0.2s;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: -1px;
+            top: 26%;
+            height: 50%;
+            border-right: 1px solid rgb(70, 70, 70);
+          }
+
+          &:hover {
+            background-color: rgba(70, 70, 70, 0.3);
+
+            img {
+              background-image: url(/img/black-side/image-box-1-1.png);
+              background-size: 100%;
+              background-position: center center;
+            }
+          }
+
+          .img-box {
+            margin-bottom: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              margin: auto;
+              height: auto;
+            }
+          }
+
+          .content {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            h4 {
+              color: white;
+              font-size: medium;
+            }
+            p {
+              font-size: small;
+              margin-top: 15px;
+              color: $link-border-color;
+            }
+          }
+        }
+        .photo-box-3 {
+          border-radius: 5px;
+          width: 25%;
+          margin: auto auto;
+          height: auto;
+          padding: 25px 50px 0px 50px;
+          transition: border 0.2s;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: -1px;
+            top: 26%;
+            height: 50%;
+            border-right: 1px solid rgb(70, 70, 70);
+          }
+
+          &:hover {
+            background-color: rgba(70, 70, 70, 0.3);
+
+            img {
+              background-image: url(/img/black-side/image-box-2-2.png);
+              background-size: 100%;
+              background-position: center center;
+            }
+          }
+
+          .img-box {
+            margin-bottom: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              margin: auto;
+              height: auto;
+            }
+          }
+
+          .content {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            h4 {
+              color: white;
+              font-size: medium;
+            }
+            p {
+              font-size: small;
+              margin-top: 15px;
+              color: $link-border-color;
+            }
+          }
+        }
+        .photo-box-4 {
+          border-radius: 5px;
+          width: 25%;
+          margin: auto auto;
+          height: auto;
+          padding: 25px 50px 0px 50px;
+          transition: border 0.2s;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: -1px;
+            top: 26%;
+            height: 50%;
+            border-right: 1px solid rgb(70, 70, 70);
+          }
+
+          &:hover {
+            background-color: rgba(70, 70, 70, 0.3);
+
+            img {
+              background-image: url(/img/black-side/image-box-3-3.png);
+              background-size: 100%;
+              background-position: center center;
+            }
+          }
+
+          .img-box {
+            margin-bottom: 20px;
+            img {
+              width: 100%;
+              height: 100%;
+              margin: auto;
+              height: auto;
+            }
+          }
+
+          .content {
+            height: auto;
+            width: 100%;
+            text-align: center;
+            h4 {
+              color: white;
+              font-size: medium;
+            }
+            p {
+              font-size: small;
+              margin-top: 15px;
+              color: $link-border-color;
             }
           }
         }
@@ -371,6 +618,357 @@ main {
     .advanced-searchbar-wrapper {
       .advanced-searchbar {
         display: none;
+      }
+    }
+  }
+}
+
+@include IPadResp() {
+  #homeBigSlide {
+    .slide-wrapper {
+      .first-slide {
+        .item-1,
+        .item-2,
+        .item-3 {
+          .container {
+            .card {
+              left: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include PhoneResp() {
+  #homeBigSlide {
+    .slide-wrapper {
+      .first-slide {
+        .item-1,
+        .item-2,
+        .item-3 {
+          .container {
+            .card {
+              height: fit-content;
+              left: 0px;
+              margin: 0 auto;
+              width: 100%;
+              padding: 5px 15px;
+              .img-text-box {
+                position: relative;
+                bottom: 10px;
+                left: -7px;
+              }
+              .card-text {
+                top: -20px;
+                right: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include IPadResp() {
+  #black-side {
+    .container {
+      .row {
+        .header {
+          h2 {
+          }
+        }
+      }
+      .container-wrapper {
+        width: 100%;
+        margin: 0 auto;
+        .style-wrapper {
+          display: flex;
+
+          align-items: center;
+          justify-content: center;
+          margin-top: 250px;
+          transition: 0.3s;
+          .photo-box {
+            border-radius: 5px;
+            width: 25%;
+            margin: auto auto;
+            height: auto;
+            padding: 25px 50px 0px 50px;
+            transition: border 0.2s;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: -1px;
+              top: 26%;
+              height: 50%;
+              border-right: 1px solid rgb(70, 70, 70);
+            }
+
+            &:hover {
+              background-color: rgba(70, 70, 70, 0.3);
+
+              img {
+                background-image: url(/img/black-side/image-box-4-4.png);
+                background-size: 100%;
+                background-position: center center;
+              }
+            }
+
+            .img-box {
+              margin-bottom: 20px;
+              img {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                height: auto;
+              }
+            }
+
+            .content {
+              height: auto;
+              width: 100%;
+              text-align: center;
+              h4 {
+                color: white;
+                font-size: medium;
+              }
+              p {
+                font-size: small;
+                margin-top: 15px;
+                color: $link-border-color;
+              }
+            }
+          }
+          .photo-box-2 {
+            border-radius: 5px;
+            width: 25%;
+            margin: auto auto;
+            height: auto;
+            padding: 25px 50px 0px 50px;
+            transition: border 0.2s;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: -1px;
+              top: 26%;
+              height: 50%;
+              border-right: 1px solid rgb(70, 70, 70);
+            }
+
+            &:hover {
+              background-color: rgba(70, 70, 70, 0.3);
+
+              img {
+                background-image: url(/img/black-side/image-box-1-1.png);
+                background-size: 100%;
+                background-position: center center;
+              }
+            }
+
+            .img-box {
+              margin-bottom: 20px;
+              img {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                height: auto;
+              }
+            }
+
+            .content {
+              height: auto;
+              width: 100%;
+              text-align: center;
+              h4 {
+                color: white;
+                font-size: medium;
+              }
+              p {
+                font-size: small;
+                margin-top: 15px;
+                color: $link-border-color;
+              }
+            }
+          }
+          .photo-box-3 {
+            border-radius: 5px;
+            width: 25%;
+            margin: auto auto;
+            height: auto;
+            padding: 25px 50px 0px 50px;
+            transition: border 0.2s;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: -1px;
+              top: 26%;
+              height: 50%;
+              border-right: 1px solid rgb(70, 70, 70);
+            }
+
+            &:hover {
+              background-color: rgba(70, 70, 70, 0.3);
+
+              img {
+                background-image: url(/img/black-side/image-box-2-2.png);
+                background-size: 100%;
+                background-position: center center;
+              }
+            }
+
+            .img-box {
+              margin-bottom: 20px;
+              img {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                height: auto;
+              }
+            }
+
+            .content {
+              height: auto;
+              width: 100%;
+              text-align: center;
+              h4 {
+                color: white;
+                font-size: medium;
+              }
+              p {
+                font-size: small;
+                margin-top: 15px;
+                color: $link-border-color;
+              }
+            }
+          }
+          .photo-box-4 {
+            border-radius: 5px;
+            width: 25%;
+            margin: auto auto;
+            height: auto;
+            padding: 25px 50px 0px 50px;
+            transition: border 0.2s;
+            position: relative;
+
+            &::after {
+              content: "";
+              position: absolute;
+              right: -1px;
+              top: 26%;
+              height: 50%;
+              border-right: 1px solid rgb(70, 70, 70);
+            }
+
+            &:hover {
+              background-color: rgba(70, 70, 70, 0.3);
+
+              img {
+                background-image: url(/img/black-side/image-box-3-3.png);
+                background-size: 100%;
+                background-position: center center;
+              }
+            }
+
+            .img-box {
+              margin-bottom: 20px;
+              img {
+                width: 100%;
+                height: 100%;
+                margin: auto;
+                height: auto;
+              }
+            }
+
+            .content {
+              height: auto;
+              width: 100%;
+              text-align: center;
+              h4 {
+                color: white;
+                font-size: medium;
+              }
+              p {
+                font-size: small;
+                margin-top: 15px;
+                color: $link-border-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include IPadResp() {
+  main {
+    #black-side {
+      .container {
+        .row {
+          .header {
+          }
+        }
+      }
+      .container-wrapper {
+        width: 100%;
+
+        .style-wrapper {
+          .photo-box {
+            width: 25%;
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@include PhoneResp() {
+  main {
+    #black-side {
+      .container-wrapper {
+        width: 100%;
+        .style-wrapper {
+          flex-wrap: wrap;
+          display: flex;
+          .photo-box {
+            width: 50%;
+            &::after {
+              display: none;
+            }
+          }
+          .photo-box-2 {
+            width: 50%;
+
+            &::after {
+              display: none;
+            }
+          }
+          .photo-box-3 {
+            width: 50%;
+
+            &::after {
+              display: none;
+            }
+          }
+          .photo-box-4 {
+            width: 50%;
+
+            &::after {
+              display: none;
+            }
+          }
+        }
       }
     }
   }

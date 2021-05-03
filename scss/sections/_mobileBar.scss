@@ -52,12 +52,14 @@
   #mobile-searchbar {
     .container {
       display: block;
+      position: absolute;
+
       .row {
         width: auto;
         .fa-cog {
           position: relative;
           display: flex;
-          left: 15px;
+          left: 39px;
           color: rgb(0, 0, 0);
           background-color: white;
           border-color: gray;
@@ -71,7 +73,7 @@
           align-items: center;
           justify-content: center;
           bottom: 112px;
-          left: 666px;
+          left: 688px;
           font-size: 1.5rem;
           border: 1px solid rgb(168, 168, 168);
           border-bottom: 0px;
@@ -79,6 +81,9 @@
           border-right: 0px;
         }
         #search-bar {
+          position: relative;
+          left: 40px;
+
           border: none;
           width: 90%;
         }
@@ -90,12 +95,13 @@
   #mobile-searchbar {
     .container {
       display: block;
+      position: relative;
       .row {
-        width: 345px;
+        width: 100%;
         .fa-cog {
           position: relative;
           display: flex;
-          left: 15px;
+          left: 12px;
           color: rgb(0, 0, 0);
           background-color: white;
           border-color: gray;
@@ -110,16 +116,17 @@
           align-items: center;
           justify-content: center;
           bottom: 112px;
-          left: 330px;
+          left: 328px;
           font-size: 1.5rem;
           border: 1px solid rgb(168, 168, 168);
-          border-bottom: 0px;
+          border-bottom: none;
           border-top: 0px;
           border-right: 0px;
         }
         #search-bar {
           border: none;
-          width: 87%;
+          width: 85%;
+          left: 11px;
         }
       }
     }
