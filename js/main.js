@@ -7,16 +7,17 @@ $(".first-slide").owlCarousel({
     },
     600: {
       items: 1,
+      nav: false,
     },
     1000: {
-      dots: false,
+      dots: true,
       items: 1,
-      nav: true,
+      nav: false,
     },
   },
 });
 
-$(".second-slider").owlCarousel({
+$(".second").owlCarousel({
   loop: false,
   dots: true,
   margin: 20,

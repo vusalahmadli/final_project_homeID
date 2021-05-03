@@ -3,239 +3,106 @@
 @import "commons";
 @import "sections/header";
 @import "sections/mobileBar";
-@import "sections/feature";
-@import "sections/welcomeHome";
+@import "sections/section-intro";
+
 @import "sections/blackSide";
 
-body {
-  align-items: center;
-}
 main {
   .slide-wrapper {
     @include PhoneResp() {
       bottom: 52px;
-      height: auto;
+      position: relative;
+      top: -104px;
     }
 
-    z-index: 1;
-    position: relative;
-    max-height: 91vh;
-    .owl-carousel {
-      .item-1 {
-        height: 91vh;
-        background-image: url(../img/Carousel-1/demo-1.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-      }
-      .item-2 {
-        height: 91vh;
-        background-image: url(../img/Carousel-1/demo-3.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-      }
-      .item-3 {
-        height: 91vh;
-        background-image: url(../img/Carousel-1/demo-2.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-      }
-
-      .owl-nav {
-        .owl-prev {
-          @include PhoneResp() {
-            display: none;
-          }
-          position: absolute;
-          z-index: 3;
-          font-size: 50px;
-          left: 50px;
-          top: 348px;
-          font-size: 50px;
-          padding: 50px;
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          background-color: white;
-          opacity: 100%;
-          &:hover {
-            background-color: #d1a570;
-            transition: 0.3s;
-          }
-          span {
-            position: absolute;
-            top: -15px;
-            left: 19px;
-            font-weight: 100;
-          }
-        }
-        .owl-next {
-          @include PhoneResp() {
-            display: none;
-          }
-          position: absolute;
-          z-index: 3;
-          left: 1775px;
-          top: 348px;
-          font-size: 50px;
-          padding: 50px;
-          border-radius: 50%;
-          width: 50px;
-          height: 50px;
-          background-color: white;
-          &:hover {
-            background-color: #d1a570;
-            transition: 0.3s;
-          }
-          span {
-            position: absolute;
-            top: -15px;
-            left: 19px;
-            font-weight: 100;
-          }
-        }
-      }
-    }
-  }
-}
-
-#inner-column {
-  @include PhoneResp() {
-    display: none;
-  }
-  .column-inn-black {
-    position: absolute;
-    bottom: -45px;
-    z-index: 4;
-    left: 205px;
-  }
-
-  .column-inn-black {
-    display: flex;
-    background-color: #222121;
-    width: 1503px;
-    height: 100px;
-    border-radius: 5px;
-  }
-  .drop-item-1 {
-    position: absolute;
-    left: 830px;
-    top: 24px;
-    span {
-      text-transform: uppercase;
-      margin-left: 3px;
-      color: #fff;
-      opacity: 0.7;
-    }
-    #type {
-      background: transparent;
-      border-right: 0px;
-      border-left: 0px;
-      border-top: 3px;
-      border-color: gray;
-      width: 190px;
-      color: white;
-      option[value="arr"] {
-        color: #191717;
-      }
-    }
-  }
-  .drop-item-2 {
-    position: absolute;
-    left: 623px;
-    bottom: 14px;
-    span {
-      text-transform: uppercase;
-      margin-left: 3px;
-      color: #fff;
-      opacity: 0.7;
-    }
-    #status {
-      background-color: transparent;
-      border-right: 0px;
-      border-left: 0px;
-      border-top: 3px;
-      border-color: gray;
-      width: 188px;
-      color: white;
-      option {
-        color: #191717;
-      }
-    }
-  }
-
-  .advanced {
-    position: relative;
-    left: 1057px;
-    bottom: -12px;
-    padding: 39px;
-    width: 191px;
-    background-color: #313030;
-    .fa-plus-circle {
-      margin-left: 15px;
-      font-size: 18px;
-      list-style: none;
-    }
-    .btn-advanced {
+    .container {
+      width: 80%;
       display: flex;
-      justify-content: center;
-      color: white;
-      list-style: none;
-      text-decoration: none;
+      .row {
+        justify-content: flex-end;
+      }
     }
   }
 
-  .element-status-form-2 {
-    .submit-black {
-      background-color: rgb(255, 255, 255);
+  .owl-carousel {
+    .item-1 {
+      height: 91vh;
+      background-image: url(../img/Carousel-1/demo-1.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @include slide-card-item;
     }
-  }
-  .element-status-form {
-    .submit {
-      //search button for black line
-      bottom: 70px;
-      position: relative;
-      left: 1265px;
-      @include btn-orange;
+    .item-2 {
+      height: 91vh;
+      background-image: url(../img/Carousel-1/demo-3.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @include slide-card-item;
     }
-    .drop-area {
-      position: relative;
-      top: 65px;
-      font-weight: 500;
-      letter-spacing: 0.93px;
-      color: #fff;
-      left: 32px;
-      top: 60px;
+    .item-3 {
+      height: 91vh;
+      background-image: url(../img/Carousel-1/demo-2.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      @include slide-card-item;
+    }
 
-      h5 {
-        font-size: 14px;
-        margin-top: 15px;
-        color: #fff;
-        opacity: 0.7;
+    .owl-nav {
+      .owl-prev {
+        @include PhoneResp() {
+          display: none;
+        }
+        position: absolute;
+        z-index: 3;
+        font-size: 50px;
+        left: 50px;
+        top: 348px;
+        font-size: 50px;
+        padding: 50px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        opacity: 100%;
+        &:hover {
+          background-color: #d1a570;
+          transition: 0.3s;
+        }
+        span {
+          position: absolute;
+          top: -15px;
+          left: 19px;
+          font-weight: 100;
+        }
       }
-      .fa-search {
-        position: relative;
-        right: 96px;
-        font-size: 20px;
-        top: 5px;
-      }
-      ::placeholder {
-        padding-left: 3px;
-        font-weight: 700;
+      .owl-next {
+        @include PhoneResp() {
+          display: none;
+        }
+        position: absolute;
+        z-index: 3;
+        left: 1775px;
+        top: 348px;
+        font-size: 50px;
+        padding: 50px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        &:hover {
+          background-color: #d1a570;
+          transition: 0.3s;
+        }
+        span {
+          position: absolute;
+          top: -15px;
+          left: 19px;
+          font-weight: 100;
+        }
       }
     }
-  }
-  input[type="search"] {
-    position: relative;
-    top: 30px;
-    right: 76px;
-    background: transparent;
-    border-right: 0px;
-    border-left: 0px;
-    border-top: 1px;
-    border-color: gray;
-    width: 550px;
   }
 }

@@ -53,8 +53,6 @@
             <li><a class="ctn-anime" href="#">Page</a></li>
           </ul>
         </nav>
-
-        <!-- </div> -->
         <nav class="registration">
           <ul>
             <li>
@@ -69,7 +67,7 @@
         </nav>
       </div>
     </header>
-    <div class="mobile-searchbar">
+    <div id="mobile-searchbar">
       <div class="container">
         <div class="row">
           <i class="fas fa-cog"></i>
@@ -85,173 +83,264 @@
       </div>
     </div>
     <main>
-      <section #homeBigSlide>
+      <section id="homeBigSlide">
         <div class="slide-wrapper">
           <div class="owl-carousel owl-theme first-slide">
-            <div class="item-1"></div>
-            <div class="item-2"></div>
-            <div class="item-3"></div>
+            <div class="item-1">
+              <div class="container">
+                <div class="row">
+                  <div class="card psi-content">
+                    <h3 class="loop-property-title">
+                      House In Foxhall Ave, Kingston
+                    </h3>
+                    <div class="loop-property-adress">
+                      <a href="">"289 Foxhall Ave, Kingston"</a>
+                    </div>
+                    <ul class="property-meta">
+                      <li>
+                        <i class="fas fa-bed"></i>
+                        <span class="bed">3 Br</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-shower"></i>
+                        <span class="bath">3 Ba</span>
+                      </li>
+                      <li>
+                        <i class="far fa-window-maximize"></i>
+                        <span class="size">900 SqFt</span>
+                      </li>
+                    </ul>
+                    <hr />
+                    <div class="property-bottom">
+                      <div class="img-text-box">
+                        <div class="featured"><span>FEATURED</span></div>
+                        <div class="for-rent"><span>FOR RENT</span></div>
+                      </div>
+                      <span class="card-text">
+                        <small class="price">$550</small>
+                        <small class="month">/ month</small>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-2">
+              <div class="container">
+                <div class="row">
+                  <div class="card psi-content">
+                    <h3 class="loop-property-title">Luxury Villa In Alice</h3>
+                    <div class="loop-property-adress">
+                      <a href="">"909 S Cameron St, Alice"</a>
+                    </div>
+                    <ul class="property-meta">
+                      <li>
+                        <i class="fas fa-bed"></i>
+                        <span class="bed">3 Br</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-shower"></i>
+                        <span class="bath">3 Ba</span>
+                      </li>
+                      <li>
+                        <i class="far fa-window-maximize"></i>
+                        <span class="size">900 SqFt</span>
+                      </li>
+                    </ul>
+                    <hr />
+                    <div class="property-bottom">
+                      <div class="img-text-box">
+                        <div class="featured"><span>FEATURED</span></div>
+                        <div class="for-rent"><span>FOR RENT</span></div>
+                      </div>
+                      <span class="card-text">
+                        <small class="price">$550</small>
+                        <small class="month">/ month</small>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item-3">
+              <div class="container">
+                <div class="row">
+                  <div class="card psi-content">
+                    <h3 class="loop-property-title">
+                      Store in Woodside, New York
+                    </h3>
+                    <div class="loop-property-adress">
+                      <a href="">39-11 61st St, Woodside, New York</a>
+                    </div>
+                    <ul class="property-meta">
+                      <li>
+                        <i class="fas fa-bed"></i>
+                        <span class="bed">3 Br</span>
+                      </li>
+                      <li>
+                        <i class="fas fa-shower"></i>
+                        <span class="bath">3 Ba</span>
+                      </li>
+                      <li>
+                        <i class="far fa-window-maximize"></i>
+                        <span class="size">900 SqFt</span>
+                      </li>
+                    </ul>
+                    <hr />
+                    <div class="property-bottom">
+                      <div class="img-text-box">
+                        <div class="featured"><span>FEATURED</span></div>
+                        <div class="for-rent"><span>FOR RENT</span></div>
+                      </div>
+                      <span class="card-text">
+                        <small class="price">$550</small>
+                        <small class="month">/ month</small>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section id="inner-column">
-        <form>
-          <div class="column-inn-black align-items-center">
-            <div class="element-status-form">
-              <div class="drop-area d-flex align-items-center">
-                <h5>KEYWORD</h5>
+      <section id="intro">
+        <div class="advanced-searchbar-wrapper">
+          <div class="advanced-searchbar">
+            <form>
+              <div class="keyword">
+                <label for="search" class="key">KEYWORD</label>
                 <input
                   type="search"
-                  name=""
-                  id="black-search"
-                  placeholder="Enter Keyword"
+                  id="search"
+                  placeholder="Enter Keyword..."
+                  style="outline: none"
                 />
                 <i class="fas fa-search"></i>
               </div>
-              <!-- black inbox line -->
-              <ul class="drop-item-1">
-                <li>
-                  <span for="type">Types</span>
-                </li>
-                <select name="types" id="type">
-                  <option value="arr">Apartment</option>
-                  <option value="arr">Bar</option>
-                  <option value="arr">Cafe</option>
-                  <option value="arr">Farm</option>
-                  <option value="arr">House</option>
-                  <option value="arr">Luxury Homes</option>
-                  <option value="arr">Office</option>
-                  <option value="arr">Single family</option>
-                  <option value="arr">Store</option>
-                  <option value="arr">Villa</option>
+              <div class="status">
+                <label for="status" class="stat">STATUS</label>
+                <select name="status" id="status">
+                  <option value="all" id="options">All Status</option>
+                  <option value="rent">For Rent</option>
+                  <option value="sell">For Sale</option>
                 </select>
-              </ul>
-              <ul class="drop-item-2">
-                <li>
-                  <span for="status">Status</span>
-                </li>
-                <li>
-                  <select name="status" id="status">
-                    <option value="">For Rent</option>
-                    <option value="">For Sale</option>
-                  </select>
-                </li>
-              </ul>
-              <div class="advanced">
-                <a href="#" class="btn-advanced"
-                  >Advanced <i class="fas fa-plus-circle"></i
-                ></a>
               </div>
-              <button class="submit" value="search" type="submit">
-                Search
+              <div class="type">
+                <label for="type" class="typ">TYPE</label>
+                <select name="type" id="type">
+                  <option value="all">All Types</option>
+                  <option value="apartment">Apartment</option>
+                  <option value="bar">Bar</option>
+                  <option value="cafe">Cafe</option>
+                  <option value="farm">Farm</option>
+                  <option value="house">House</option>
+                  <option value="luxury">Luxury Homes</option>
+                  <option value="office">Office</option>
+                  <option value="single">Single</option>
+                  <option value="store">Store</option>
+                  <option value="villa">Villa</option>
+                </select>
+              </div>
+              <button class="btn">
+                Advanced <i class="fas fa-plus-circle ml-2"></i>
               </button>
-            </div>
+              <input type="submit" value="Search" />
+            </form>
           </div>
-        </form>
-      </section>
-      <section id="welcome-home">
-        <div class="container">
-          <div class="flex-row">
-            <div class="col-md-12">
-              <div class="welcome-text">
-                <h2>Welcome to HomeID</h2>
+        </div>
+        <div class="container-wrapper">
+          <div class="welcome-box">
+            <h1>Welcome to HomeID</h1>
+            <p>
+              Whether you're buying, selling or renting, we can help you move
+              forward
+            </p>
+          </div>
+          <div class="card-wrapper">
+            <div class="card">
+              <div class="home-image">
+                <img src="../img/welcome-home/image-box-01.png" alt="" />
+              </div>
+              <div class="text-box">
+                <h3>Buy a new home</h3>
                 <p>
-                  Whether you’re buying, selling or renting, we can help you
-                  move forward.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  fugiat magni deleniti.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="home-image">
+                <img src="../img/welcome-home/image-box-02.png" alt="" />
+              </div>
+              <div class="text-box">
+                <h3>Sell a home</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  fugiat magni deleniti.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="home-image">
+                <img src="../img/welcome-home/image-box-03.png" alt="" />
+              </div>
+              <div class="text-box">
+                <h3>Rent a home</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+                  fugiat magni deleniti.
                 </p>
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4 col-sm-4">
-                <div class="card item-1">
-                  <img src="../img/welcome-home/image-box-01.png" alt="" />
-                  <h4>Buy a new home</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consec <br />
-                    tetur cing elit. Suspe ndisse suscipit
-                  </p>
-                </div>
+          <div class="featured-prop">
+            <div class="header-wrapper">
+              <div class="homeId">
+                <h1>HomeID Featured Properties</h1>
+                <p>Find a perfect place for you.</p>
               </div>
-              <div class="col-md-4 col-sm-4">
-                <div class="card item-1">
-                  <img src="../img/welcome-home/image-box-02.png" alt="" />
-                  <h4>Sell a home</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consec <br />
-                    tetur cing elit. Suspe ndisse suscipit
-                  </p>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-4">
-                <div class="card item-1">
-                  <img src="../img/welcome-home/image-box-03.png" alt="" />
-                  <h4>Rent a home</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet, consec <br />
-                    tetur cing elit. Suspe ndisse suscipit
-                  </p>
-                </div>
+              <div class="view-button">
+                <a href="#"
+                  >View all properties
+                  <i class="fas fa-long-arrow-alt-right"></i
+                ></a>
               </div>
             </div>
-          </div>
-        </div>
-        <div id="feature">
-          <div class="container-wrapper mt-5">
-            <div class="featured-prop">
-              <div class="header-wrapper">
-                <div class="home-id">
-                  <h1>HomeID Featured Properties</h1>
-                  <p>Find a perfect place for you</p>
-                </div>
-                <div class="view-button">
-                  <a href="#"
-                    >View all properities
-                    <i class="fas fa-long-arrow-alt-right"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="owl-carousel owl-theme second-slider">
+            <div class="second-slider-wrapper">
+              <div class="owl-carousel owl-theme second">
                 <div class="card">
                   <div class="img-text-box">
                     <div class="featured"><span>FEATURED</span></div>
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/demo-1.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>550$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -260,39 +349,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/demo-2.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>550$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -301,39 +382,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/demo-3.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -342,39 +415,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/single-property-17.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -383,39 +448,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/single-property-23.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -424,39 +481,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/single-property-26.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>550$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -465,39 +514,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/single-property-29.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -506,39 +547,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/single-property-34.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>550$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -547,39 +580,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/single-property-37.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="card">
@@ -588,39 +613,31 @@
                     <div class="for-rent"><span>FOR RENT</span></div>
                   </div>
                   <img
+                    src="../img/feature/single-property-38.jpg"
                     class="card-img-top"
-                    src="/img/feature/demo-1.jpg"
-                    alt="Card image cap"
+                    alt="..."
                   />
                   <div class="card-body">
-                    <h5 class="card-title">House In Foxhall Ave, Kingston</h5>
-                    <a href="#">289 Foxhall Ave, Kingston</a>
-                    <div class="icon-line-box">
-                      <ul class="line d-flex">
-                        <li>
-                          <i><i class="fas fa-bed"></i></i>
-                          <span class="bed">3 Br</span>
-                        </li>
-                        <li>
-                          <i><i class="fas fa-shower"></i></i>
-                          <span class="bath">3 Ba</span>
-                        </li>
-                        <li>
-                          <i><i class="far fa-window-maximize"></i></i>
-                          <span class="size">900 SqFt</span>
-                        </li>
-                      </ul>
+                    <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                    <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                    <div class="icon-div">
+                      <p>
+                        <i class="fas fa-couch mr-1"></i>3 Br
+                        <i class="fas fa-shower mr-1"></i>2Ba
+                        <i class="fas fa-ruler-vertical mr-1"></i>900 SqFt
+                      </p>
                     </div>
                   </div>
                   <div class="card-footer">
-                    <span class="card-text">
-                      <small class="price">$550</small>
-                      <small class="month">/ month</small>
-                      <div class="card-icons-right float-right">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-plus"></i>
+                    <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                    <div class="icon-box">
+                      <div class="star">
+                        <i class="far fa-star"></i>
                       </div>
-                    </span>
+                      <div class="plus">
+                        <i class="fas fa-plus"></i>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -631,24 +648,10 @@
       <section id="black-side">
         <div class="container">
           <div class="row">
-            <div class="col-md-12">
-              <div class="header">
-                <h2>Explore New Lifestyles</h2>
-                <p>Find your next home, in any style you prefer.</p>
-              </div>
+            <div class="header">
+              <h2>Explore New Lifestyles</h2>
+              <p>Find your next home, in any style you prefer.</p>
             </div>
-            <!-- <div class="icon-anime d-flex">
-              <div class="back">
-                <div class="item">
-                  <img src="/img/black-side/image-box-60.png" alt="" />
-                  <img
-                    class="white"
-                    src="/img/black-side/image-box-53.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
       </section>

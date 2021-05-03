@@ -1,11 +1,8 @@
-.mobile-searchbar {
+#mobile-searchbar {
+  .container {
     display: none;
-    @include PhoneResp() {
-      height: 52px;
-      display: flex;
-  
+    .row {
       .fa-cog {
-        display: flex;
         z-index: 4;
         align-items: center;
         justify-content: center;
@@ -49,3 +46,82 @@
       }
     }
   }
+}
+
+@include IPadResp() {
+  #mobile-searchbar {
+    .container {
+      display: block;
+      .row {
+        width: auto;
+        .fa-cog {
+          position: relative;
+          display: flex;
+          left: 15px;
+          color: rgb(0, 0, 0);
+          background-color: white;
+          border-color: gray;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          border-right-color: gray;
+        }
+        .fa-search {
+          display: flex;
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          bottom: 112px;
+          left: 666px;
+          font-size: 1.5rem;
+          border: 1px solid rgb(168, 168, 168);
+          border-bottom: 0px;
+          border-top: 0px;
+          border-right: 0px;
+        }
+        #search-bar {
+          border: none;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+@include PhoneResp() {
+  #mobile-searchbar {
+    .container {
+      display: block;
+      .row {
+        width: 345px;
+        .fa-cog {
+          position: relative;
+          display: flex;
+          left: 15px;
+          color: rgb(0, 0, 0);
+          background-color: white;
+          border-color: gray;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+          border: 1px solid rgb(168, 168, 168);
+        }
+
+        .fa-search {
+          display: flex;
+          position: relative;
+          align-items: center;
+          justify-content: center;
+          bottom: 112px;
+          left: 330px;
+          font-size: 1.5rem;
+          border: 1px solid rgb(168, 168, 168);
+          border-bottom: 0px;
+          border-top: 0px;
+          border-right: 0px;
+        }
+        #search-bar {
+          border: none;
+          width: 87%;
+        }
+      }
+    }
+  }
+}

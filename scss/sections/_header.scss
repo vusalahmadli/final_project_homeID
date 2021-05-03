@@ -2,6 +2,12 @@ header {
   overflow-x: hidden;
   @include PhoneResp() {
     overflow-x: hidden;
+
+    z-index: 1;
+    height: 152px;
+  }
+  @include IPadResp() {
+    width: 100%;
     z-index: 1;
     height: 152px;
   }
@@ -22,6 +28,13 @@ header {
       top: 25px;
       font-size: 30px;
     }
+    @include IPadResp() {
+      display: block;
+      position: relative;
+      font-size: 30px;
+      top: 30px;
+      left: 560px;
+    }
   }
 
   img {
@@ -29,6 +42,11 @@ header {
       left: 30px;
       top: 30px;
     }
+    @include IPadResp() {
+      left: 60px;
+      top: 30px;
+    }
+
     top: 20px;
     position: relative;
     left: 220px;
@@ -38,6 +56,10 @@ header {
     @include PhoneResp() {
       display: none;
     }
+    @include IPadResp() {
+      display: none !important;
+    }
+
     .fa-chevron-down {
       color: white;
       font-size: 15px;

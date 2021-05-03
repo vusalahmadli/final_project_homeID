@@ -29,6 +29,113 @@
   }
 }
 
-@mixin blackTypeLogo {
-  
+@mixin slide-card-item {
+  .container {
+    width: 80%;
+    display: flex;
+    .row {
+      justify-content: flex-end;
+    }
+
+    .card {
+      justify-content: center;
+      width: 470px;
+      height: 263px;
+      border-radius: 5px;
+      padding: 30px 40px 20px 40px;
+      position: relative;
+      left: 845px;
+      top: 235px;
+
+      .loop-property-title {
+        color: $main-text-col;
+        font-size: 30px;
+        font-weight: 500;
+        margin-top: 30px;
+      }
+      .loop-property-adress {
+        a {
+          color: $card-a-col;
+          text-decoration: none;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+      .property-meta {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 20px;
+
+        li {
+          .fa-bed {
+            color: #d1a570;
+          }
+          .bed {
+            margin-left: 5px;
+            color: $mute-color;
+          }
+          .fa-shower {
+            color: #d1a570;
+          }
+          .bath {
+            color: $mute-color;
+          }
+          .fa-window-maximize {
+            color: #d1a570;
+          }
+          .size {
+            margin-left: 5px;
+            color: $mute-color;
+          }
+        }
+      }
+      .property-bottom {
+        .img-text-box {
+          .featured {
+            position: relative;
+            padding: 1px 20px;
+            border-radius: 3px;
+            background-color: #ff6935;
+            width: fit-content;
+            margin-left: 10px;
+            position: relative;
+            left: 100px;
+            top: 9px;
+            span {
+              color: white;
+              font-size: small;
+            }
+          }
+          .for-rent {
+            position: relative;
+            top: -15px;
+            padding: 1px 20px;
+            border-radius: 3px;
+            background-color: rgb(95, 185, 185);
+            margin-left: 5px;
+            width: fit-content;
+          }
+          span {
+            text-align: center;
+            color: white;
+            font-size: small;
+          }
+        }
+      }
+      .card-text {
+        position: relative;
+        float: right;
+        top: -45px;
+        .price {
+          font-weight: 700;
+          font-size: 25px;
+        }
+        .month {
+          color: rgb(171, 171, 171);
+        }
+      }
+    }
+  }
 }
