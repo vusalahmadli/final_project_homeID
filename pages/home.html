@@ -33,12 +33,35 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
+    <div class="modal-container" id="modal-container">
+      <div class="modal">
+      <form class="modal-form">
+       <h1>Log In</h1>
+       <p>Don't have an account yet?<a class='sign-up' href='#'> Sign up for free</a></p>
+       <div class="input-box">
+         <input type="email" placeholder="USERNAME OR EMAIL ADRESS" id="email">
+         <span class="validation"></span>
+         <input type="password" placeholder="PASSWORD" id="password">
+         <span class="validation"></span>
+         <div class="div">
+          <div class="inner-div">
+           <input type="checkbox" id="remMe" style="margin-right: 5px;"><label for="remMe" style="font-size: small;">Remember me</label>
+          </div>
+           <a href="#" style="font-size: small;">Last password</a>
+         </div>
+         <input type="submit" value="Login" id="submit">
+       </div>
+       
+      </form>
+       <div id="times">&times</div>
+      </div>
+     </div>
     <header>
       <div class="row">
         <div class="logo">
           <img class="header-logo" src="../icons/demo-logo.png" alt="" />
         </div>
-        <i class="fas fa-bars"></i>
+        <i id="bars" class="fas fa-bars"></i>
         <nav class="navigation d-flex justify-content-center">
           <ul>
             <li><a class="ctn-anime" href="#">Home</a></li>
@@ -56,7 +79,7 @@
         <nav class="registration">
           <ul>
             <li>
-              <i class="far fa-user-circle mr-2"></i><a href="">SIGN IN</a>
+              <i class="far fa-user-circle mr-2"></i><a id="signin"  href="">SIGN IN</a>
             </li>
             <li>
               <a class="btn-listing" href=""
@@ -695,11 +718,750 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="lastestProperties">
+        <div class="featured-prop">
+          <div class="header-wrapper">
+            <div class="homeId">
+              <h3>Lastest Properties For Sale</h3>
+              <p>Find a perfect place for you.</p>
+            </div>
+            <div class="view-button">
+              <a href="#"
+                >View all properties <i class="fas fa-long-arrow-alt-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="third-slider-wrapper">
+            <div class="owl-carousel owl-theme second">
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/demo-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>550$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/demo-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>550$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/demo-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/single-property-17.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/single-property-23.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/single-property-26.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>550$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/single-property-29.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/single-property-34.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>550$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/single-property-37.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="img-text-box">
+                  <div class="featured"><span>FEATURED</span></div>
+                  <div class="for-rent"><span>FOR RENT</span></div>
+                </div>
+                <img
+                  src="../img/feature/single-property-38.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h4 class="card-title">House Highland Ave Los Angeles</h4>
+                  <p class="card-text">5137 Compton Ave, Los Angeles</p>
+                  <div class="icon-div">
+                    <p>
+                      <i class="fas fa-couch mr-1"></i>3 Br
+                      <i class="fas fa-shower mr-1"></i>2Ba
+                      <i class="far fa-window-maximize"></i>900 SqFt
+                    </p>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"><b>1,250,000,$</b> / month</small>
+                  <div class="icon-box">
+                    <div class="star">
+                      <i class="far fa-star"></i>
+                    </div>
+                    <div class="plus">
+                      <i class="fas fa-plus"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="neighborhoods">
+        <div class="header-wrapper">
+          <div class="welcome-text">
+            <h3>Recommended Neighborhoods</h3>
+            <p>Based on your previous search.</p>
+          </div>
+          <div class="view-button">
+            <a href="#"
+              >View all neighborhoods <i class="fas fa-long-arrow-alt-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div class="item-1">
+            <img src="/img/neighborhoods/SanFransisco.jpg" alt="" />
+            <div class="photo-text">
+              <h3>San Fransisco</h3>
+              <p>4 Properties</p>
+            </div>
+          </div>
+          <div class="item-2">
+            <img src="/img/neighborhoods/NewYork.jpg" alt="" />
 
+            <div class="photo-text">
+              <h3>New York</h3>
+              <p>6 Properties</p>
+            </div>
+          </div>
+          <div class="item-3">
+            <img src="/img/neighborhoods/LosAngelos.jpg" alt="" />
+
+            <div class="photo-text">
+              <h3>Los Angelos</h3>
+              <p>9 Properties</p>
+            </div>
+          </div>
+          <div class="item-4">
+            <img src="/img/neighborhoods/SanDiego.jpg" alt="" />
+
+            <div class="photo-text">
+              <h3>San Diego</h3>
+              <p>5 Properties</p>
+            </div>
+          </div>
+          <div class="item-5">
+            <img src="/img/neighborhoods/Kingston.jpg" alt="" />
+
+            <div class="photo-text">
+              <h3>Kingston</h3>
+              <p>6 Properties</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="working-home">
+        <div class="container">
+          <div class="row">
+            <div class="welcome-text">
+              <h3>Why Do People Love Working With HomeID?</h3>
+              <p>
+                Whether you’re buying, selling or renting, we can help you move
+                forward.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="fourth-slider-wrapper">
+          <div class="owl-carousel owl-theme fourth">
+            <div class="card">
+              <div class="card-header">
+                <img src="/img/working-home/testimonial-04-60x60.jpg" alt="" />
+                <div class="info-text">
+                  <a href="">Lydia Wise</a>
+                  <span>Manchester</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Working with @homeID is like having a family member <br />
+                  who can fix everything. They know what you need, exactly
+                  <br />
+                  when you need it.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img src="/img/working-home/testimonial-03-60x60.jpg" alt="" />
+                <div class="info-text">
+                  <a href="">Lydia Wise</a>
+                  <span>Manchester</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Working with @homeID is like having a family member <br />
+                  who can fix everything. They know what you need, exactly
+                  <br />
+                  when you need it.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img src="/img/working-home/testimonial-05-60x60.jpg" alt="" />
+                <div class="info-text">
+                  <a href="">Lydia Wise</a>
+                  <span>Manchester</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Working with @homeID is like having a family member <br />
+                  who can fix everything. They know what you need, exactly
+                  <br />
+                  when you need it.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                <img src="/img/working-home/testimonial-04-60x60.jpg" alt="" />
+                <div class="info-text">
+                  <a href="">Lydia Wise</a>
+                  <span>Manchester</span>
+                </div>
+              </div>
+              <div class="card-content">
+                <p>
+                  Working with @homeID is like having a family member <br />
+                  who can fix everything. They know what you need, exactly
+                  <br />
+                  when you need it.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="article">
+        <div class="article-wrapper">
+          <div class="header">
+            <h1>New & Articles</h1>
+            <p>Check Out Recent News & Articles</p>
+          </div>
+          <div class="slider-wrapper">
+            <div class="owl-carousel owl-theme fifth-slider">
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="home-button">
+                  <p>MY HOME</p>
+                </div>
+                <img src="/img/article/1.jpg" class="card-img-top" alt="..." />
+                <div class="div2">
+                  <p>July 24,2021</p>
+                  <h3>Modern apartment adjacent</h3>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content.
+                  </p>
+                  <a href="#" class="btn btn-primary"
+                    >Read more <i class="fas fa-long-arrow-alt-right ml-2"></i
+                  ></a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="brends">
+        <div class="brends-wrapper">
+          <div class="brends-carousel-wrapper">
+            <div class="owl-carousel owl-theme six-slider">
+              <div class="brend">
+                <img src="/img/brends//client-logo-05.png" />
+              </div>
+              <div class="brend">
+                <img src="/img/brends//client-logo-05.png" />
+
+              </div>
+              <div class="brend">
+                <img src="/img/brends//client-logo-05.png" />
+
+              </div>
+              <div class="brend">
+                <img src="/img/brends//client-logo-05.png" />
+
+              </div>
+              <div class="brend">
+                <img src="/img/brends//client-logo-05.png" />
+
+              </div>
+              <div class="brend">
+                <img src="/img/brends//client-logo-05.png" />
+
+              </div>
+              <div class="brend">
+                <img src="/img/brends//client-logo-05.png" />
+
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <footer>
+        <section id="allRights">
+          <div class="allRights-wrapper">
+            <div class="upper-side">
+              <img src="/icons/demo-logo.png" alt="">
+              <div class="social-media">
+                <ul>
+                  <li><a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a target="_blank" href="https://www.invisionapp.com/"><i class="fab fa-invision"></i></a></li>
+                  <li><a target="_blank" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></i></a></li>
+                  <li><a target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="lower-side">
+              <div class="privacy">
+                <ul>
+                  <li><a href="#">TERMS OF USE</a></li>
+                  <li><a href="#">PRIVACY POLICY</a></li>
+                  <li><a href="../pages/contact.html">CONTACT SUPPORT</a></li>
+                  <li><a href="#">CAREERS</a></li>
+                  <li><a href="#">FAQS</a></li>
+                </ul>
+              </div>
+              <div class="homeID">
+                <p>©️ 2021 homeID. All Rights Reserved</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
       integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="

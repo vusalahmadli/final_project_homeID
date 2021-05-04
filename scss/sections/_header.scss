@@ -16,18 +16,26 @@ header {
   height: 80px;
   background-color: #191717;
 
+  @include PhoneResp() {
+    header {
+      .row {
+        #bars {
+          display: block;
+          position: relative;
+          font-size: 30px;
+          top: 28px;
+          left: 183px;
+        }
+      }
+    }
+  }
   .fa-bars {
     display: none;
     position: relative;
     color: white;
     left: 300px;
     top: 20px;
-    @include PhoneResp() {
-      display: block;
-      left: 30px;
-      top: 25px;
-      font-size: 30px;
-    }
+
     @include IPadResp() {
       display: block;
       position: relative;
